@@ -1,0 +1,38 @@
+{
+  "name": "apify-hackathon",
+  "version": "1.0.0",
+  "description": "Apify Hackathon Project - OpenVC Scraper with React Frontend",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "build": "tsc",
+    "dev": "node --watch main.js",
+    "lint": "eslint src --ext .ts",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:install": "cd frontend && npm install",
+    "copy-data": "node scripts/copy-data.js"
+  },
+  "keywords": [
+    "apify",
+    "scraper",
+    "automation",
+    "openvc"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apify": "^3.0.0",
+    "crawlee": "^3.0.0",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

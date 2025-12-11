@@ -1,0 +1,39 @@
+{
+	"name": "OpenVC",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"scripts": {
+		"start": "npm run start:dev",
+		"start:dev": "tsx src/main.ts",
+		"start:prod": "node dist/main.js",
+		"codegen": "tsx src/runCodegen.ts",
+		"build": "tsc",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"postinstall": "npx crawlee install-playwright-browsers"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@playwright/test": "1.54.1",
+		"@types/uuid": "^11.0.0",
+		"apify": "^3.4.2",
+		"@apify/log": "^2.5.20",
+		"uuid": "^13.0.0",
+		"@apify/eslint-config": "^1.0.0",
+		"@apify/tsconfig": "^0.1.1",
+		"@types/node": "^22.15.32",
+		"eslint": "^9.29.0",
+		"eslint-config-prettier": "^10.1.5",
+		"globals": "^16.2.0",
+		"prettier": "^3.5.3",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.34.1"
+	}
+}

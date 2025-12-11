@@ -1,0 +1,8 @@
+{
+  "actorSpecification": 1,
+  "name": "apify-hackathon",
+  "version": "1.0",
+  "buildTag": "latest",
+  "environmentVariables": {}
+}
+
